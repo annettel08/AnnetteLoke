@@ -11,7 +11,7 @@ export const Nav = () => {
         </Link>
         <div className={styles.linkContainer}>
             <Link className={styles.link} href={'/about-us'}>About</Link>
-            <a className={styles.link} href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a className={styles.link} href="/AnnetteLoke/resume.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
             <Link className={styles.link} href={'mailto:annettelxh@gmail.com'}>Contact</Link>
