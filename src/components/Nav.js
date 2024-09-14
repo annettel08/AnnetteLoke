@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Nav = () => {
   return (
-    <div className={styles.nav}>
+    <nav className={styles.nav}>
         <Link href={'/'}>
             <Image src={'/logo.png'} width={57} height={50} alt="logo" priority />
         </Link>
@@ -14,6 +14,6 @@ export const Nav = () => {
             <Link className={styles.link} href={'/#resume'}>Resume</Link>
             <Link className={styles.link} href={'/contact'}>Contact</Link>
         </div>
-    </div>
+    </nav>
   )
 }

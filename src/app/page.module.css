@@ -68,19 +68,7 @@
   color: white;
   height: 20%;
   position: relative;
-  transition-duration: 0.3s;
-}
-
-.linkContainerLink:hover {
-  opacity: 0.8;
-}
-
-.linkTitle {
-  position: absolute;
-  font-size: calc(0.6rem + 0.6vw);
-  color: white;
-  top: calc(0.5rem + 0.5vh);
-  left: calc(0.5rem + 0.5vh);
+  overflow: hidden;
 }
 
 .linkImg {
@@ -88,4 +76,38 @@
   height: calc(5rem + 20vh);
   object-fit: cover;
   border-radius: 15px;
+  transition-duration: 0.8s;
+}
+
+.linkContainerLink:hover .linkImg{
+  filter: brightness(50%);
+}
+
+.linkContainerLink:hover .linkDescriptionContainer {
+  bottom: calc(1rem + 1vh);
+  opacity: 1;
+}
+
+.linkTitle {
+  position: absolute;
+  font-size: calc(0.6rem + 0.6vw);
+  color: white;
+  top: calc(1rem + 1vh);
+  left: calc(1rem + 1vh);
+  z-index: 10;
+}
+
+.linkDescriptionContainer {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  bottom: calc(-10% + 1rem + 1vh);
+  left: calc(1rem + 1vh);
+  transition-duration: 0.8s;
+  z-index: 10;
+}
+
+.linkDescriptionHeader {
+  color: #B8B8B8;
+  font-weight: 500;
 }

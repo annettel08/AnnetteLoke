@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Nav />
       <div className={styles.body}>
         <div className={styles.heroContainer}>
           <div className={styles.heroTextContainer}>
@@ -20,14 +19,22 @@ export default function Home() {
         </div>
 
         <div className={styles.linksContainer}>
-          <Link className={styles.linkContainerLink} href={'/govtech'}>
+          <Link className={styles.linkContainerLink} href={'/govtech'} id="govtech">
             <p className={styles.linkTitle}>Internship at GovTech</p>
             <img className={styles.linkImg} src="/govtech.jpg" />
+            <div className={styles.linkDescriptionContainer}>
+              <h5 className={styles.linkDescriptionHeader}>Anti-Scam Product Design Intern</h5>
+              <p className={styles.linkDescriptionText}>Over 6 months, I helped to design a platform that hunts and disrupts scams sites</p>
+            </div>
           </Link>
 
-          <Link className={styles.linkContainerLink} href={'/govtech'}>
-            <p className={styles.linkTitle}>Internship at GovTech</p>
+          <Link className={styles.linkContainerLink} href={'/sginnovate'} id="sginnovate">
+            <p className={styles.linkTitle}>Internship at SGInnovate</p>
             <img className={styles.linkImg} src="/sginnovate.jpeg" />
+            <div className={styles.linkDescriptionContainer}>
+              <h5 className={styles.linkDescriptionHeader}>Product Management Intern</h5>
+              <p className={styles.linkDescriptionText}>I led the design for a section of the company's landing page</p>
+            </div>
           </Link>
         </div>
       </div>
