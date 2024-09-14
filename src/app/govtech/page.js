@@ -74,7 +74,7 @@ and redesigned existing features on SATIS. </p>
             className={`${styles.section} ${section3InView ? styles.fadeIn : ''}`}
         >
             <h2 className={styles.header}>Design Process</h2>
-            <img className={styles.picture} src="/govtech_design_process.png" />
+            <img className={styles.picture} src="/AnnetteLoke/govtech_design_process.png" />
             <p className={styles.text}>
                 As an intern, I was assigned tasks from my mentor. These tasks could be <strong>standalone features or entire sections</strong> that needed to be designed.
             </p>
@@ -106,10 +106,10 @@ platform, and I will hold these experiences close to my heart.
         </div>
         <div className={styles.socialsRow}>
             <a href="https://www.linkedin.com/in/annetteloke/">
-                <img className={styles.socialLinkImg} src="/linkedin.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/linkedin.png" />
             </a>
             <Link href="mailto:annettelxh@gmail.com">
-                <img className={styles.socialLinkImg} src="/email.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
             </Link>
         </div>
     </div>

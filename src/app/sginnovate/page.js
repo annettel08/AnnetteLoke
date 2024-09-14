@@ -112,7 +112,7 @@ there is still untapped potential to strengthen and increase interactions in the
             <p className={styles.text}>
                 Since these designs were intended to illustrate potential future directions for the project, user testing and implementation were not needed.
             </p>
-            <img className={styles.picture} src="/sginnovate_design_process.png" />
+            <img className={styles.picture} src="/AnnetteLoke/sginnovate_design_process.png" />
             <p className={styles.text}>
             As part of the product management team, I consulted other stakeholders within the company and industry to create a rough set of user 
 requirements. Using these requirements, I drew <strong>paper prototypes and made wireframes</strong>. I then discussed my design decisions together 
@@ -125,18 +125,18 @@ with the Lead Designer, and <strong>iterated</strong> my designs until they were
             className={`${styles.section} ${section5InView ? styles.fadeIn : ''}`}
         >
             <h2 className={styles.header}>Design Sample: E-learning</h2>
-            <img className={styles.picture} src="/design_sample_e-learning.png" />
+            <img className={styles.picture} src="/AnnetteLoke/design_sample_e-learning.png" />
         </div>
         <div
             ref={section6Ref}
             className={`${styles.section} ${section6InView ? styles.fadeIn : ''}`}
         >
             <h2 className={styles.header}>Design Sample: Interest Groups</h2>
-            <img className={styles.picture} src="/design_sample_interest-group.png" />
+            <img className={styles.picture} src="/AnnetteLoke/design_sample_interest-group.png" />
             <p className={styles.subtitle}>
                 Proposed “Main Page” of the interest group module
             </p>
-            <img className={styles.picture} src="/design_sample_inside-interest-group.png" />
+            <img className={styles.picture} src="/AnnetteLoke/design_sample_inside-interest-group.png" />
             <p className={styles.subtitle}>
                 Proposed design of the specific interest group
             </p>
@@ -156,10 +156,10 @@ setting, and helped to solidify my interest in UI/UX design.
         </div>
         <div className={styles.socialsRow}>
             <a href="https://www.linkedin.com/in/annetteloke/">
-                <img className={styles.socialLinkImg} src="/linkedin.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/linkedin.png" />
             </a>
             <Link href="mailto:annettelxh@gmail.com">
-                <img className={styles.socialLinkImg} src="/email.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
             </Link>
         </div>
     </div>

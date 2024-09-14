@@ -15,13 +15,13 @@ export default function Home() {
             Currently finishing my last year as an Economics student at the National University of Singapore. I have previously held internships at <Link className={styles.link} href={'/#govtech'} sx={{ display: 'inline' }}>GovTech</Link> and <Link className={styles.link} href={'/#sginnovate'} sx={{ display: 'inline' }}>SGInnovate</Link> - do check my work out!
             </p>
           </div>
-          <img className={styles.profilePicture} src="/profile_pic_main.jpg" />
+          <img className={styles.profilePicture} src="/AnnetteLoke/profile_pic_main.jpg" />
         </div>
 
         <div className={styles.linksContainer}>
           <Link className={styles.linkContainerLink} href={'/govtech'} id="govtech">
             <p className={styles.linkTitle}>Internship at GovTech</p>
-            <img className={styles.linkImg} src="/govtech.jpg" />
+            <img className={styles.linkImg} src="/AnnetteLoke/govtech.jpg" />
             <div className={styles.linkDescriptionContainer}>
               <h5 className={styles.linkDescriptionHeader}>Anti-Scam Product Design Intern</h5>
               <p className={styles.linkDescriptionText}>Over 6 months, I helped to design a platform that hunts and disrupts scams sites</p>
@@ -30,7 +30,7 @@ export default function Home() {
 
           <Link className={styles.linkContainerLink} href={'/sginnovate'} id="sginnovate">
             <p className={styles.linkTitle}>Internship at SGInnovate</p>
-            <img className={styles.linkImg} src="/sginnovate.jpeg" />
+            <img className={styles.linkImg} src="/AnnetteLoke/sginnovate.jpeg" />
             <div className={styles.linkDescriptionContainer}>
               <h5 className={styles.linkDescriptionHeader}>Product Management Intern</h5>
               <p className={styles.linkDescriptionText}>I led the design for a section of the company's landing page</p>
@@ -39,10 +39,10 @@ export default function Home() {
         </div>
         <div className={styles.socialsRow}>
             <a href="https://www.linkedin.com/in/annetteloke/">
-                <img className={styles.socialLinkImg} src="/linkedin.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/linkedin.png" />
             </a>
             <a href="mailto:annettelxh@gmail.com">
-                <img className={styles.socialLinkImg} src="/email.png" />
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
             </a>
         </div>
       </div>
