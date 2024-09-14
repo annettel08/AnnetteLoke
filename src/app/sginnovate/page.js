@@ -76,9 +76,9 @@ there is still untapped potential to strengthen and increase interactions in the
                 <p>To <span className={styles.red}>increase interest in the Deep-tech industry</span> and to cater to those looking for a career switch. This is 
                 done by allowing mentors (recognised industry experts) to <span className={styles.red}>upload videos</span> for mentees to watch.</p>
             </div>
-            <div className={styles.smallContainer}>
+            <div className={styles.smallContainer} style={{ background: '#E6F6FF' }}>
                 <h3 className={styles.smallContainerHeader}>2. Interest Groups</h3>
-                <p>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to
+                <p>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to 
                 <span className={styles.purple}>interact and exchange insights</span> within specialised interest groups.</p>
             </div>
         </div>
@@ -94,7 +94,7 @@ there is still untapped potential to strengthen and increase interactions in the
                         consulting the Lead Designer on design decisions.
                     </p>
                 </div>
-                <div style={{ background: '#E6F6FF' }}  className={styles.splitRowContainer}>
+                <div className={styles.splitRowContainer}>
                     <h2 className={styles.header}>Contributions</h2>
                     <ul className={styles.list}>
                         <li>Requirements Gathering</li>
