@@ -38,7 +38,7 @@ export default function page() {
     <div className={styles.main}>
         <div className={styles.topRow}>
             <p>Internship at GovTech</p>
-            <p>.</p>
+            <p>•</p>
             <p>Anti-Scam Product Design Intern</p>
         </div>
         <h1 className={styles.title}>Disrupting over 42000 potentially harmful scam sites, safeguarding Singapore’s digital space </h1>

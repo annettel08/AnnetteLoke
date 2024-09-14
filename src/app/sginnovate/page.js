@@ -41,7 +41,7 @@ export default function page() {
     <div className={styles.main}>
         <div className={styles.topRow}>
             <p>Internship at SGInnovate</p>
-            <p>.</p>
+            <p>•</p>
             <p>Product Management Intern</p>
         </div>
         <h1 className={styles.title}>Transforming ideas into designs and mockups that inspire the next step</h1>
