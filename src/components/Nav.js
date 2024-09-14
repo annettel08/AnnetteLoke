@@ -7,7 +7,7 @@ export const Nav = () => {
   return (
     <nav className={styles.nav}>
         <Link href={'/'}>
-            <Image src={'/logo.png'} width={57} height={50} alt="logo" priority />
+            <Image src={'/AnnetteLoke/logo.png'} width={57} height={50} alt="logo" priority />
         </Link>
         <div className={styles.linkContainer}>
             <Link className={styles.link} href={'/about-us'}>About</Link>
