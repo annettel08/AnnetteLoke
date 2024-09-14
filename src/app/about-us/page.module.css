@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     padding: calc(2rem + 2vh) calc(6rem + 6vw);
+    padding-bottom: calc(1rem + 1vh);
     background-image: url('/AnnetteLoke/background.png');
     background-size: cover;
     background-position: center;
@@ -26,6 +27,7 @@
 }
 
 .text {
+    z-index: 10;
     font-weight: 400;
 }
 
