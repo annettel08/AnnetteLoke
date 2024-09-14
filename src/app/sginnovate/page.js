@@ -78,8 +78,7 @@ there is still untapped potential to strengthen and increase interactions in the
             </div>
             <div className={styles.smallContainer} style={{ background: '#E6F6FF' }}>
                 <h3 className={styles.smallContainerHeader}>2. Interest Groups</h3>
-                <p>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to 
-                <span className={styles.purple}>interact and exchange insights</span> within specialised interest groups.</p>
+                <p>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to <span className={styles.purple}>interact and exchange insights</span> within specialised interest groups.</p>
             </div>
         </div>
         <div
