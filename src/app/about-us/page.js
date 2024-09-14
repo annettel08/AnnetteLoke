@@ -24,7 +24,7 @@ projects. </p>
         </div>
         <img style={{ transform: 'rotate(-40deg)', right: '19%', bottom: '38%' }} className={styles.icon} src="/AnnetteLoke/paw.png" />
         <img style={{ right: '30%', bottom: '50%' }} className={styles.icon} src="/AnnetteLoke/badminton.png" />
-        <img style={{ right: '73%', bottom: '38%' }} className={styles.icon} src="/AnnetteLoke/croissant.png" />
+        <img style={{ right: '73%', bottom: '42%' }} className={styles.icon} src="/AnnetteLoke/croissant.png" />
         <img style={{ right: '75%', bottom: '68%', width: 'calc(3rem + 3vw)' }} className={styles.icon} src="/AnnetteLoke/tennis.png" />
         <img style={{ transform: 'rotate(-10deg)', width: 'calc(3rem + 3vw)', right: '25%', bottom: '75%' }} className={styles.icon} src="/AnnetteLoke/takoyaki.png" />
     </div>

@@ -94,7 +94,7 @@ there is still untapped potential to strengthen and increase interactions in the
                         consulting the Lead Designer on design decisions.
                     </p>
                 </div>
-                <div className={styles.splitRowContainer}>
+                <div style={{ background: '#E6F6FF' }}  className={styles.splitRowContainer}>
                     <h2 className={styles.header}>Contributions</h2>
                     <ul className={styles.list}>
                         <li>Requirements Gathering</li>

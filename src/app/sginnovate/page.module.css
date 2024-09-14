@@ -84,10 +84,12 @@
 
 .red {
     color: #E02222;
+    font-weight: 600;
 }
 
 .purple {
     color: #9933BD;
+    font-weight: 600;
 }
 
 .splitRow {
