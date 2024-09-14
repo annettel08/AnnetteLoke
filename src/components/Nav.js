@@ -10,9 +10,11 @@ export const Nav = () => {
             <Image src={'/logo.png'} width={57} height={50} alt="logo" priority />
         </Link>
         <div className={styles.linkContainer}>
-            <Link className={styles.link} href={'/'}>About</Link>
-            <Link className={styles.link} href={'/#resume'}>Resume</Link>
-            <Link className={styles.link} href={'/contact'}>Contact</Link>
+            <Link className={styles.link} href={'/about-us'}>About</Link>
+            <a className={styles.link} href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
+            <Link className={styles.link} href={'mailto:annettelxh@gmail.com'}>Contact</Link>
         </div>
     </nav>
   )

@@ -20,8 +20,8 @@
 
 .title {
     color: #000;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 800;
     font-size: calc(1.2rem + 1.2vw);
 }
 
@@ -46,7 +46,7 @@
     padding-bottom: calc(2rem + 2vh);
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
+    transition: opacity 0.6s ease-out 0.1s, transform 0.6s ease-out 0.1s;
 }
 
 .section.fadeIn {
@@ -70,4 +70,19 @@
 .picture {
     width: 80%;
     align-self: center;
+}
+
+.socialsRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: calc(1rem + 1vw);
+    width: 100%;
+    justify-content: center;
+    margin-top: calc(3rem + 3vh);
+}
+  
+.socialLinkImg {
+    width: calc(1.5rem + 1.5vw);
+    height: auto;
 }

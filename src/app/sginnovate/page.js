@@ -3,6 +3,7 @@
 import { React, useEffect, useState, useRef } from 'react'
 import { useInView } from 'react-intersection-observer';
 import styles from './page.module.css'
+import Link from 'next/link';
 
 export default function page() {
     
@@ -153,7 +154,14 @@ setting, and helped to solidify my interest in UI/UX design.
             <p className={styles.text}>I am immensely grateful to the Product team and the Lead Designer for welcoming my request to try designing, and for encouraging me to 
             explore my interests. This opportunity was pivotal in starting my design career, and I am excited to build on this foundation.</p>
         </div>
-
+        <div className={styles.socialsRow}>
+            <a href="https://www.linkedin.com/in/annetteloke/">
+                <img className={styles.socialLinkImg} src="/linkedin.png" />
+            </a>
+            <Link href="mailto:annettelxh@gmail.com">
+                <img className={styles.socialLinkImg} src="/email.png" />
+            </Link>
+        </div>
     </div>
   )
 }

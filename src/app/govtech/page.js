@@ -3,6 +3,7 @@
 import { React, useEffect, useState, useRef } from 'react'
 import { useInView } from 'react-intersection-observer';
 import styles from './page.module.css'
+import Link from 'next/link';
 
 export default function page() {
     
@@ -102,6 +103,14 @@ boundaries. The success and importance of this platform as a crucial part to pro
 testament to its improved (and potential) capabilities. It fills me with joy and honour to be able to improve the user experience of this
 platform, and I will hold these experiences close to my heart.
             </p>
+        </div>
+        <div className={styles.socialsRow}>
+            <a href="https://www.linkedin.com/in/annetteloke/">
+                <img className={styles.socialLinkImg} src="/linkedin.png" />
+            </a>
+            <Link href="mailto:annettelxh@gmail.com">
+                <img className={styles.socialLinkImg} src="/email.png" />
+            </Link>
         </div>
     </div>
   )

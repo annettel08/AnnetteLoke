@@ -13,6 +13,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: calc(3rem + 3vh) calc(5rem + 5vw);
+  width: 100%;
 }
 
 .heroContainer {
@@ -29,11 +30,14 @@
 }
 
 .heroText {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
   font-size: calc(1.2rem + 1.2vw);
 }
 
 .uxDesigner {
   font-size: calc(1.6rem + 1.6vw);
+  font-weight: 700;
   color: #55C0CF;
 }
 
@@ -110,4 +114,19 @@
 .linkDescriptionHeader {
   color: #B8B8B8;
   font-weight: 500;
+}
+
+.socialsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: calc(1rem + 1vw);
+  width: 100%;
+  justify-content: center;
+  margin-top: calc(3rem + 3vh);
+}
+
+.socialLinkImg {
+  width: calc(1.5rem + 1.5vw);
+  height: auto;
 }

@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: calc(2rem + 2vh) calc(6rem + 6vw);
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 88vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    font-size: calc(1.2rem + 1.2vw);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 800;
+}
+
+.picture {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.text {
+    font-weight: 400;
+}
+
+.icon {
+    position: absolute;
+    width: calc(2rem + 2vw);
+    height: auto;
+}
+
+.socialsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: calc(1rem + 1vw);
+}
+
+.socialLinkImg {
+    width: calc(1.5rem + 1.5vw);
+    height: auto;
+}

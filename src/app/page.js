@@ -10,12 +10,12 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <div className={styles.heroTextContainer}>
             <h1 className={styles.heroText}>Hello! I'm Annette, a</h1>
-            <h2 className={styles.heroText}><span className={styles.uxDesigner}>Cutie Pie</span>.</h2>
+            <h2 className={styles.heroText}><span className={styles.uxDesigner}>UX Designer</span>.</h2>
             <p className={styles.description}>
             Currently finishing my last year as an Economics student at the National University of Singapore. I have previously held internships at <Link className={styles.link} href={'/#govtech'} sx={{ display: 'inline' }}>GovTech</Link> and <Link className={styles.link} href={'/#sginnovate'} sx={{ display: 'inline' }}>SGInnovate</Link> - do check my work out!
             </p>
           </div>
-          <img className={styles.profilePicture} src="/profile_picture.png" />
+          <img className={styles.profilePicture} src="/profile_pic_main.jpg" />
         </div>
 
         <div className={styles.linksContainer}>
@@ -36,6 +36,14 @@ export default function Home() {
               <p className={styles.linkDescriptionText}>I led the design for a section of the company's landing page</p>
             </div>
           </Link>
+        </div>
+        <div className={styles.socialsRow}>
+            <a href="https://www.linkedin.com/in/annetteloke/">
+                <img className={styles.socialLinkImg} src="/linkedin.png" />
+            </a>
+            <a href="mailto:annettelxh@gmail.com">
+                <img className={styles.socialLinkImg} src="/email.png" />
+            </a>
         </div>
       </div>
     </main>
