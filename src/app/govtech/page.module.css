@@ -3,7 +3,7 @@
     flex-direction: column;
     row-gap: calc(1rem + 1vh);
     padding: calc(2rem + 2vh) calc(6rem + 6vw);
-    background-image: url('/background.png');
+    background-image: url('/AnnetteLoke/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
