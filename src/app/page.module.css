@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: calc(3rem + 3vh) calc(5rem + 5vw);
+  padding: 7% 12%;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
 
 .description {
   font-size: calc(0.5rem + 0.5vw);
-  margin-top: calc(1.5rem + 1.5vh);
+  margin-top: calc(1rem + 2.5vh);
   line-height: 1.5;
 }
 
@@ -78,7 +78,7 @@
 
 .linkImg {
   width: 100%;
-  height: calc(5rem + 20vh);
+  height: calc(7rem + 23vh);
   object-fit: cover;
   border-radius: 15px;
   transition-duration: 0.8s;
@@ -130,4 +130,62 @@
 .socialLinkImg {
   width: calc(1.5rem + 1.5vw);
   height: auto;
+}
+
+
+
+@media (max-width: 750px) {
+  .body {
+    padding: 6% 10%;
+  }
+
+  .heroText {
+    font-size: calc(1.1rem + 1.1vw);
+  }
+
+  .uxDesigner {
+    font-size: calc(1.4rem + 1.4vw);
+  }
+
+  .description {
+    margin-top: calc(1rem + 1.5vh);
+  }
+
+  .linkImg {
+    height: calc(5rem + 20vh);
+  }
+
+  .linkTitle {
+    top: calc(0.7rem + 0.7vh);
+    left: calc(0.7rem + 0.7vh);
+  }
+  
+  .linkDescriptionContainer {
+    bottom: calc(-10% + 0.7rem + 0.7vh);
+    left: calc(0.7rem + 0.7vh);
+  }
+}
+
+@media (max-width: 600px) {
+  .profilePicture {
+    height: calc(6rem + 7vw);
+    width: calc(6rem + 7vw);
+    align-self: center;
+  }
+
+  .heroText {
+    font-size: calc(1rem + 1vw);
+  }
+
+  .uxDesigner {
+    font-size: calc(1.3rem + 1.3vw);
+  }
+
+  .description {
+    font-size: calc(0.4rem + 0.4vw);
+  }
+
+  .linkImg {
+    height: calc(4rem + 17vh);
+  }
 }

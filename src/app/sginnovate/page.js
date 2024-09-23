@@ -41,8 +41,8 @@ export default function page() {
     <div className={styles.main}>
         <div className={styles.topRow}>
             <p>Internship at SGInnovate</p>
-            <p>•</p>
-            <p>Product Management Intern</p>
+            <p className={styles.dot}>•</p>
+            <p className={styles.roleText}>Product Management Intern</p>
         </div>
         <h1 className={styles.title}>Transforming ideas into designs and mockups that inspire the next step</h1>
         <div className={styles.alertContainer}>
@@ -73,12 +73,12 @@ there is still untapped potential to strengthen and increase interactions in the
             </p>
             <div className={styles.smallContainer}>
                 <h3 className={styles.smallContainerHeader}>1. E-learning module</h3>
-                <p>To <span className={styles.red}>increase interest in the Deep-tech industry</span> and to cater to those looking for a career switch. This is 
+                <p className={styles.text}>To <span className={styles.red}>increase interest in the Deep-tech industry</span> and to cater to those looking for a career switch. This is 
                 done by allowing mentors (recognised industry experts) to <span className={styles.red}>upload videos</span> for mentees to watch.</p>
             </div>
             <div className={styles.smallContainer} style={{ background: '#E6F6FF' }}>
                 <h3 className={styles.smallContainerHeader}>2. Interest Groups</h3>
-                <p>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to <span className={styles.purple}>interact and exchange insights</span> within specialised interest groups.</p>
+                <p className={styles.text}>To <span className={styles.purple}>increase interactions between experts and prospective employees</span> by allowing both groups to <span className={styles.purple}>interact and exchange insights</span> within specialised interest groups.</p>
             </div>
         </div>
         <div
@@ -95,7 +95,7 @@ there is still untapped potential to strengthen and increase interactions in the
                 </div>
                 <div className={styles.splitRowContainer}>
                     <h2 className={styles.header}>Contributions</h2>
-                    <ul className={styles.list}>
+                    <ul className={`${styles.list} ${styles.text}`}>
                         <li>Requirements Gathering</li>
                         <li>Prototyping</li>
                         <li>User Interface Design</li>

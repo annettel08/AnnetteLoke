@@ -38,8 +38,8 @@ export default function page() {
     <div className={styles.main}>
         <div className={styles.topRow}>
             <p>Internship at GovTech</p>
-            <p>•</p>
-            <p>Anti-Scam Product Design Intern</p>
+            <p className={styles.dot}>•</p>
+            <p className={styles.roleText}>Anti-Scam Product Design Intern</p>
         </div>
         <h1 className={styles.title}>Disrupting over 42000 potentially harmful scam sites, safeguarding Singapore’s digital space </h1>
         <div className={styles.alertContainer}>
@@ -54,14 +54,14 @@ export default function page() {
             <p className={styles.text}>SATIS is a platform by Govtech that protects web users from scam websites. When I joined,  the platform had some basic features in place
  and the team was in the process of adding more features to enhance the platform’s capabilities. Over 6 months, I designed new features 
 and redesigned existing features on SATIS. </p>
-            <p>My goal was to <strong>maintain ease of use of the platform while integrating more complex features</strong> to improve the platform's capabilities.</p>
+            <p className={styles.text}>My goal was to <strong>maintain ease of use of the platform while integrating more complex features</strong> to improve the platform's capabilities.</p>
         </div>
         <div
             ref={section2Ref}
             className={`${styles.section} ${section2InView ? styles.fadeIn : ''}`}
         >
             <h2 className={styles.header}>Contributions</h2>
-            <ul className={styles.list}>
+            <ul className={`${styles.list} ${styles.text}`}>
                 <li>Requirements Gathering</li>
                 <li>User Interface Design</li>
                 <li>Prototyping</li>

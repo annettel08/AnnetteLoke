@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
     column-gap: calc(0.5rem + 0.5vw);
-    font-size: 600;
+    font-size: calc(0.5rem + 0.6vw);
 }
 
 .title {
@@ -54,11 +54,12 @@
     transform: translateY(0);
   }
 
-.header {
+.header, .smallContainerHeader {
     font-size: calc(0.7rem + 0.7vw);
 }
 
 .text {
+    font-size: calc(0.5rem + 0.5vw);
     font-weight: 400;
 }
 
@@ -127,4 +128,35 @@
 .socialLinkImg {
     width: calc(1.5rem + 1.5vw);
     height: auto;
+}
+
+@media (max-width: 750px) {
+    .main {
+        padding: calc(1.5rem + 1vh) calc(2rem + 2vw);
+    }
+
+    .picture {
+        width: 100%;
+        align-self: center;
+    }
+
+    .smallContainer {
+        padding: calc(1rem + 1vw) calc(1rem + 1vw);
+    }
+}
+
+@media (max-width: 600px) {
+    .topRow {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: calc(0.25rem + 0.25vh)
+    }
+
+    .dot {
+        display: none;
+    }
+   
+    .roleText {
+        font-weight: 600;
+    }
 }
