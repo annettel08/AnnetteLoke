@@ -2,12 +2,6 @@
     display: flex;
     flex-direction: column;
     row-gap: calc(1rem + 1vh);
-    padding: calc(2rem + 2vh) calc(6rem + 6vw);
-    background-image: url('/AnnetteLoke/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
 }
 
 .topRow {
@@ -16,6 +10,22 @@
     align-items: center;
     column-gap: calc(0.5rem + 0.5vw);
     font-size: calc(0.5rem + 0.6vw);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(1rem + 1vh);
+    padding: calc(2rem + 2vh) calc(6rem + 6vw);
+}
+
+.topRowContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(1rem + 1vh);
+    background-color: #FFE5F7;
+    padding: calc(3rem + 3vh) calc(6rem + 6vw);
+
 }
 
 .title {

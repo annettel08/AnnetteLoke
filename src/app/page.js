@@ -18,11 +18,11 @@ export default function Home() {
 
         <div className={styles.linksContainer}>
           <div className={styles.linkRow}>
-            <Link className={styles.linkRowImgLeftContainer} href={'/govtech'}>
+            <div className={styles.linkRowImgLeftContainer} shouldBeLink={true}>
               <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/Harvest_img.png`} />
-            </Link>
+            </div>
 
-            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#F0F7D4", color: "#538C19" }} href={'/govtech'} id="govtech">
+            <div shouldBeLink={true} className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#F0F7D4", color: "#538C19" }} id="govtech">
               <div className={styles.linkNoticeContainer}>
                 <p className={styles.linkTitleInNotice}>Enabling Teachers To Focus on Student’s Needs</p>
                 <div className={styles.linkNoticeNotice}>
@@ -35,7 +35,7 @@ export default function Home() {
                 <h5 className={styles.linkDescriptionHeader}>Harvest Education</h5>
                 <p className={styles.linkDescriptionText}>UI/UX Designer</p>
               </div>
-            </Link>
+            </div>
           </div>
 
           <div className={styles.linkRow}>
@@ -53,11 +53,11 @@ export default function Home() {
           </div>
 
           <div className={styles.linkRow}>
-            <Link className={styles.linkRowImgLeftContainer} href={'/govtech'}>
+            <Link className={styles.linkRowImgLeftContainer} href={'/sginnovate'}>
               <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/SGInnovate_img.png`} />
             </Link>
 
-            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#FFE5F7", color: "#9412A8" }} href={'/govtech'} id="govtech">
+            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#FFE5F7", color: "#9412A8" }} href={'/sginnovate'} id="sginnovate">
               <p className={styles.linkTitle}>Transforming Ideas Into Mockups</p>
               <div className={styles.linkDescriptionContainer}>
                 <h5 className={styles.linkDescriptionHeader}>SGInnovate</h5>
