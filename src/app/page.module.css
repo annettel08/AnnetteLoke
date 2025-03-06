@@ -56,10 +56,6 @@
 .body {
   display: flex;
   flex-direction: column;
-  background-image: url('/AnnetteLoke/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 7% 12%;
   padding-bottom: 15%;
   width: 100%;
