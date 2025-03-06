@@ -17,26 +17,21 @@ export default function Home() {
       <div className={styles.body}>
 
         <div className={styles.linksContainer}>
+
           <div className={styles.linkRow}>
-            <div className={styles.linkRowImgLeftContainer} shouldBeLink={true}>
-              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/Harvest_img.png`} />
-            </div>
+            <Link className={styles.linkRowImgLeftContainer} href={'/sginnovate'}>
+              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/SGInnovate_img.png`} />
+            </Link>
 
-            <div shouldBeLink={true} className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#F0F7D4", color: "#538C19" }} id="govtech">
-              <div className={styles.linkNoticeContainer}>
-                <p className={styles.linkTitleInNotice}>Enabling Teachers To Focus on Student’s Needs</p>
-                <div className={styles.linkNoticeNotice}>
-                  <img className={styles.linkNoticeImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/wip-icon.png`} />
-                  <p className={styles.linkNotice}>This is a work in progress!</p>
-                </div>
-              </div>
-
+            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#FFE5F7", color: "#9412A8" }} href={'/sginnovate'} id="sginnovate">
+              <p className={styles.linkTitle}>Transforming Ideas Into Mockups</p>
               <div className={styles.linkDescriptionContainer}>
-                <h5 className={styles.linkDescriptionHeader}>Harvest Education</h5>
-                <p className={styles.linkDescriptionText}>UI/UX Designer</p>
+                <h5 className={styles.linkDescriptionHeader}>SGInnovate</h5>
+                <p className={styles.linkDescriptionText}>Product Management Intern</p>
               </div>
-            </div>
+            </Link>
           </div>
+
 
           <div className={styles.linkRow}>
             <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkLeft}`} style={{ backgroundColor: "#FFF5E1", color: "#CA3232" }} href={'/govtech'} id="govtech">
@@ -52,18 +47,26 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className={styles.linkRow}>
-            <Link className={styles.linkRowImgLeftContainer} href={'/sginnovate'}>
-              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/SGInnovate_img.png`} />
-            </Link>
 
-            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#FFE5F7", color: "#9412A8" }} href={'/sginnovate'} id="sginnovate">
-              <p className={styles.linkTitle}>Transforming Ideas Into Mockups</p>
-              <div className={styles.linkDescriptionContainer}>
-                <h5 className={styles.linkDescriptionHeader}>SGInnovate</h5>
-                <p className={styles.linkDescriptionText}>Product Management Intern</p>
+          <div className={styles.linkRow}>
+            <div className={styles.linkRowImgLeftContainerNoHover} shouldBeLink={true}>
+              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/Harvest_img.png`} />
+            </div>
+
+            <div shouldBeLink={true} className={`${styles.linkContainerLinkNoHover} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#F0F7D4", color: "#538C19" }} id="govtech">
+              <div className={styles.linkNoticeContainer}>
+                <p className={styles.linkTitleInNotice}>Enabling Teachers To Focus on Student’s Needs</p>
+                <div className={styles.linkNoticeNotice}>
+                  <img className={styles.linkNoticeImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/wip-icon.png`} />
+                  <p className={styles.linkNotice}>This is a work in progress!</p>
+                </div>
               </div>
-            </Link>
+
+              <div className={styles.linkDescriptionContainer}>
+                <h5 className={styles.linkDescriptionHeader}>Harvest Education</h5>
+                <p className={styles.linkDescriptionText}>UI/UX Designer</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -135,6 +135,14 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.linkRowImgLeftContainerNoHover, .linkRowImgRightContainerNoHover {
+  width: calc(15vh + 15rem);
+  height: auto;
+  object-fit: contain;
+  margin-right: -5vw;
+  z-index: 1;
+}
+
 .linkRowImgRightContainer:hover, .linkRowImgLeftContainer:hover {
   transform: scale(1.05);
 }
@@ -153,6 +161,17 @@
 }
 
 .linkContainerLink {
+  text-decoration: none;
+  color: black;
+  height: calc(13rem + 16vh);
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkContainerLinkNoHover {
   text-decoration: none;
   color: black;
   height: calc(13rem + 16vh);
