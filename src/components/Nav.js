@@ -14,7 +14,6 @@ export const Nav = () => {
             <a className={styles.link} href={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/resume.pdf`} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
-            <Link className={styles.link} href={'mailto:annettelxh@gmail.com'}>Contact</Link>
         </div>
     </nav>
   )
