@@ -5,6 +5,54 @@
   overflow: visible;
 }
 
+.fold {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 12vh);
+  padding-bottom: 25%;
+}
+
+.foldTextTop {
+  font-size: calc(1.6rem + 1.6vw);
+}
+
+.foldTextBottom {
+  font-size: calc(2rem + 2vw);
+  color: #3568DF;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.foldTextTop {
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+}
+
+.foldTextBottom {
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+
+.foldBackground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -13,6 +61,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 7% 12%;
+  padding-bottom: 15%;
   width: 100%;
 }
 
@@ -63,58 +112,161 @@
 .linksContainer {
   display: flex;
   flex-direction: column;
-  row-gap: calc(1rem + 1vh);
+  row-gap: calc(5rem + 5vh);
   width: 100%;
   margin-top: 10%;
 }
 
+.linkRowImgLeftContainer {
+  width: calc(15vh + 15rem);
+  height: auto;
+  object-fit: contain;
+  margin-right: -5vw;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkRowImgRightContainer {
+  width: calc(15vh + 15rem);
+  height: auto;
+  object-fit: contain;
+  margin-left: -5vw;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkRowImgRightContainer:hover, .linkRowImgLeftContainer:hover {
+  transform: scale(1.05);
+}
+
+.linkRowImg {
+  width: 100%;
+}
+
+.linkRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 0;
+}
+
 .linkContainerLink {
   text-decoration: none;
-  color: white;
-  height: 20%;
+  color: black;
+  height: calc(13rem + 16vh);
+  width: 65%;
   position: relative;
   overflow: hidden;
+  border-radius: 22px;
+  transition: all 0.3s ease-in-out;
 }
 
-.linkImg {
-  width: 100%;
-  height: calc(7rem + 23vh);
-  object-fit: cover;
-  border-radius: 15px;
-  transition-duration: 0.8s;
+.linkContainerLink:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  transform: translate(2px, -2px); /* Moves 5px right and 5px up */
 }
 
-.linkContainerLink:hover .linkImg{
-  filter: brightness(50%);
+.linkContainerLinkRight {
+  margin-left: -5vw;
 }
 
-.linkContainerLink:hover .linkDescriptionContainer {
-  bottom: calc(1rem + 1vh);
-  opacity: 1;
+.linkContainerLinkLeft {
+  margin-right: -5vw;
+}
+
+.linkNoticeContainer {
+  position: absolute;
+  top: calc(1rem + 1vh);
+  right: calc(1rem + 1vh);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.linkNoticeNotice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F95858;
+  color: #FFF5F5;
+  padding: 8px 20px;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: Montserrat;
+  border-radius: 10px;
+  margin-top: calc(0.5rem + 0.5vh);
+}
+
+.linkNoticeImg {
+  width: 20px;
+  height: 20px;
 }
 
 .linkTitle {
   position: absolute;
-  font-size: calc(0.6rem + 0.6vw);
-  color: white;
+
+  font-family: Montserrat;
+  font-size: calc(0.8rem + 0.9vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   top: calc(1rem + 1vh);
-  left: calc(1rem + 1vh);
   z-index: 10;
+  width: 70%;
+}
+
+.linkTitleInNotice {
+  font-family: Montserrat;
+  font-size: calc(0.8rem + 0.9vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 10;
+  width: 70%;
+}
+
+.linkContainerLinkLeft .linkTitle, .linkContainerLinkLeft .linkTitleInNotice {
+  left: calc(1rem + 1vh);
+}
+
+.linkContainerLinkRight .linkTitle, .linkContainerLinkRight .linkNoticeContainer {
+  right: calc(1rem + 1vh);
+  text-align: right;
 }
 
 .linkDescriptionContainer {
   position: absolute;
-  color: white;
-  opacity: 0;
-  bottom: calc(-10% + 1rem + 1vh);
-  left: calc(1rem + 1vh);
+  bottom: calc(1rem + 1vh);
   transition-duration: 0.8s;
   z-index: 10;
 }
 
+.linkContainerLinkLeft .linkDescriptionContainer {
+  left: calc(1rem + 1vh);
+}
+
+.linkContainerLinkRight .linkDescriptionContainer {
+  right: calc(1rem + 1vh);
+  text-align: right;
+}
+
 .linkDescriptionHeader {
-  color: #B8B8B8;
+  font-family: Montserrat;
+  font-size: calc(0.6rem + 0.7vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.linkDescriptionText {
+  font-family: Montserrat;
+  font-size: calc(0.4rem + 0.5vw);
+  font-style: normal;
   font-weight: 500;
+  line-height: normal;
 }
 
 .socialsRow {

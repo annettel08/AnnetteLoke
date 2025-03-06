@@ -6,44 +6,65 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className={styles.main}>
+
+      <div className={styles.fold}>
+        <h1 className={styles.foldTextTop}>Hello! I'm a</h1>
+        <h1 className={styles.foldTextBottom}>Product Designer</h1>
+        <img className={styles.foldBackground} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/fold-spot-gradient.png`} />
+      </div>
+
+
       <div className={styles.body}>
-        <div className={styles.heroContainer}>
-          <div className={styles.heroTextContainer}>
-            <h1 className={styles.heroText}>Hello! I'm Annette, a</h1>
-            <h2 className={styles.heroText}><span className={styles.uxDesigner}>UX Designer</span>.</h2>
-            <p className={styles.description}>
-            Currently finishing my last year as an Economics student at the National University of Singapore. I have previously held internships at <Link className={styles.link} href={'/#govtech'} sx={{ display: 'inline' }}>GovTech</Link> and <Link className={styles.link} href={'/#sginnovate'} sx={{ display: 'inline' }}>SGInnovate</Link> - do check my work out!
-            </p>
-          </div>
-          <img className={styles.profilePicture} src="/AnnetteLoke/profile_pic_main.jpg" />
-        </div>
 
         <div className={styles.linksContainer}>
-          <Link className={styles.linkContainerLink} href={'/govtech'} id="govtech">
-            <p className={styles.linkTitle}>Internship at GovTech</p>
-            <img className={styles.linkImg} src="/AnnetteLoke/govtech.jpg" />
-            <div className={styles.linkDescriptionContainer}>
-              <h5 className={styles.linkDescriptionHeader}>Anti-Scam Product Design Intern</h5>
-              <p className={styles.linkDescriptionText}>Over 6 months, I helped to design a platform that hunts and disrupts scams sites</p>
-            </div>
-          </Link>
+          <div className={styles.linkRow}>
+            <Link className={styles.linkRowImgLeftContainer} href={'/govtech'}>
+              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/Harvest_img.png`} />
+            </Link>
 
-          <Link className={styles.linkContainerLink} href={'/sginnovate'} id="sginnovate">
-            <p className={styles.linkTitle}>Internship at SGInnovate</p>
-            <img className={styles.linkImg} src="/AnnetteLoke/sginnovate.jpeg" />
-            <div className={styles.linkDescriptionContainer}>
-              <h5 className={styles.linkDescriptionHeader}>Product Management Intern</h5>
-              <p className={styles.linkDescriptionText}>I led the design for a section of the company's landing page</p>
-            </div>
-          </Link>
-        </div>
-        <div className={styles.socialsRow}>
-            <a href="https://www.linkedin.com/in/annetteloke/">
-                <img className={styles.socialLinkImg} src="/AnnetteLoke/linkedin.png" />
-            </a>
-            <a href="mailto:annettelxh@gmail.com">
-                <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
-            </a>
+            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#F0F7D4", color: "#538C19" }} href={'/govtech'} id="govtech">
+              <div className={styles.linkNoticeContainer}>
+                <p className={styles.linkTitleInNotice}>Enabling Teachers To Focus on Student’s Needs</p>
+                <div className={styles.linkNoticeNotice}>
+                  <img className={styles.linkNoticeImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/wip-icon.png`} />
+                  <p className={styles.linkNotice}>This is a work in progress!</p>
+                </div>
+              </div>
+
+              <div className={styles.linkDescriptionContainer}>
+                <h5 className={styles.linkDescriptionHeader}>Harvest Education</h5>
+                <p className={styles.linkDescriptionText}>UI/UX Designer</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className={styles.linkRow}>
+            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkLeft}`} style={{ backgroundColor: "#FFF5E1", color: "#CA3232" }} href={'/govtech'} id="govtech">
+              <p className={styles.linkTitle}>Safeguarding Singapore’s Digital Space</p>
+              <div className={styles.linkDescriptionContainer}>
+                <h5 className={styles.linkDescriptionHeader}>Govtech</h5>
+                <p className={styles.linkDescriptionText}>Anti-Scam Product Design Intern</p>
+              </div>
+            </Link>
+
+            <Link className={styles.linkRowImgRightContainer} href={'/govtech'}>
+              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/Govtech_img.png`} />
+            </Link>
+          </div>
+
+          <div className={styles.linkRow}>
+            <Link className={styles.linkRowImgLeftContainer} href={'/govtech'}>
+              <img className={styles.linkRowImg} src={`${process.env.NODE_ENV === "development" ? "" : "/AnnetteLoke"}/SGInnovate_img.png`} />
+            </Link>
+
+            <Link className={`${styles.linkContainerLink} ${styles.linkContainerLinkRight}`} style={{ backgroundColor: "#FFE5F7", color: "#9412A8" }} href={'/govtech'} id="govtech">
+              <p className={styles.linkTitle}>Transforming Ideas Into Mockups</p>
+              <div className={styles.linkDescriptionContainer}>
+                <h5 className={styles.linkDescriptionHeader}>SGInnovate</h5>
+                <p className={styles.linkDescriptionText}>Product Management Intern</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </main>

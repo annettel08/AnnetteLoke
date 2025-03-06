@@ -22,6 +22,16 @@ projects.<br></br><br></br>
                 <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
             </Link>
         </div>
+
+        <div className={styles.socialsRow}>
+            <a href="https://www.linkedin.com/in/annetteloke/">
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/linkedin.png" />
+            </a>
+            <a href="mailto:annettelxh@gmail.com">
+                <img className={styles.socialLinkImg} src="/AnnetteLoke/email.png" />
+            </a>
+        </div>
+
         <img style={{ transform: 'rotate(-40deg)', right: '19%', bottom: '38%' }} className={styles.icon} src="/AnnetteLoke/paw.png" />
         <img style={{ right: '30%', bottom: '50%' }} className={styles.icon} src="/AnnetteLoke/badminton.png" />
         <img style={{ right: '73%', bottom: '42%' }} className={styles.icon} src="/AnnetteLoke/croissant.png" />
